@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>OnlineNewsPopularity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="script/jquery.3.2.1.js"></script>
+    <script src="script/d3.v3.min.js"></script>
+    <script src="script/d3.tip.v0.6.3.js"></script>
+    <script src="script/myscript.js"></script>
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<body style="width: 1280px; margin: auto; text-align: center;">
+    <div id="info" style="margin: 10px auto; width:1100px; color: #7b946e; font-family: 'Helvetica Neue', sans-serif; font-size: 55px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; ">
+        What's factor of OnlineNewsPopularity
+    </div>
+    <div id="control" class="" style="width:200px; float:left">
+        <h1 style="margin: 0">Filter</h1>
+        <div class="my-box" style="margin: 10px auto; text-align: left; padding: 5px">
+            <h4 style="margin:0">Year</h4>
+            <div  id="year" style="height: 80px; overflow-y: scroll">
+                <input type="checkbox" checked="checked" value="All"> All
+                <br>
+                <input type="checkbox" value="2013"> 2013
+                <br>
+                <input type="checkbox" value="2014"> 2014
+                <br>
+            </div>
+        </div>
+        <div class="my-box" style="margin: 10px auto; text-align: left; padding: 5px">
+            <h4 style="margin:0">Month</h4>
+            <div id="month" style="height: 150px; overflow-y: scroll">
+                <input type="checkbox" checked="checked" value="All"> All
+                <br>
+                <input type="checkbox" value="1"> 1
+                <br>
+                <input type="checkbox" value="2"> 2
+                <br>
+                <input type="checkbox" value="3"> 3
+                <br>
+                <input type="checkbox" value="4"> 4
+                <br>
+                <input type="checkbox" value="5"> 5
+                <br>
+                <input type="checkbox" value="6"> 6
+                <br>
+                <input type="checkbox" value="7"> 7
+                <br>
+                <input type="checkbox" value="9"> 8
+                <br>
+                <input type="checkbox" value="9"> 9
+                <br>
+                <input type="checkbox" value="10"> 10
+                <br>
+                <input type="checkbox" value="11"> 11
+                <br>
+                <input type="checkbox" value="12"> 12
+            </div>
+        </div>
+        <div class="my-box" style="background: white; margin: 10px auto; text-align: left; padding: 5px">
+            <h4 style="margin:0">Weekdays</h4>
+            <div id="weekday" style="height: 150px; overflow-y: scroll">
+                <input type="checkbox" checked="checked" value="All"> All
+                <br>
+                <input type="checkbox" value="Monday"> Monday
+                <br>
+                <input type="checkbox" value="Tuesday"> Tuesday
+                <br>
+                <input type="checkbox" value="Wednesday"> Wednesday
+                <br>
+                <input type="checkbox" value="Thursday"> Thursday
+                <br>
+                <input type="checkbox" value="Friday"> Friday
+                <br>
+                <input type="checkbox" value="Saturday"> Saturday
+                <br>
+                <input type="checkbox" value="Sunday"> Sunday
+            </div>
+        </div>
+        <div class="my-box" style="background: white; margin: 10px auto; text-align: left; padding: 5px">
+            <h4 style="margin:0">Chanel</h4>
+            <div id="aticletype" style="height: 150px; overflow-y: scroll">
+                <input type="checkbox" checked="checked" value="All"> All
+                <br>
+                <input type="checkbox" value="World"> World
+                <br>
+                <input type="checkbox" value="Social Media"> Social Media
+                <br>
+                <input type="checkbox" value="Viral"> Viral
+                <br>
+                <input type="checkbox" value="Lifestyle"> Lifestyle
+                <br>
+                <input type="checkbox" value="Tech"> Tech
+                <br>
+                <input type="checkbox" value="Bussiness"> Bussiness
+                <br>
+                <input type="checkbox" value="Entertainment"> Entertainment
+            </div>
+        </div>
+        <div id="amount_img_video" class="my-box" style="background: white; margin: 10px auto; text-align: left; padding: 5px">
+            <h4 style="margin:0">Img & Video</h4>
+            <select name="" id="amount_img_video_select">
+                <option value="5">
+                    <=5</option>
+                        <option value="10">
+                            <=10</option>
+                                <option value="15">
+                                    <=15</option>
+                                        <option value="20">
+                                            <=20</option>
+                                                <option value="30">
+                                                    <=30</option>
+                                                        <option value="50">
+                                                            <=50</option>
+                                                                <option value="100">
+                                                                    <=100</option>
+                                                                        <option value="130">
+                                                                            <=130</option>
+            </select>
+        </div>
+    </div>
+    <div id="visual" style="width:1000px; float:left">
+        <div id="scaterplot_type_weekday" style="width: 100%; float: left; margin: auto; text-align: center;">
+        </div>
+        <div id="line_num_img_video" style="width: 100%; float: left; margin: auto; text-align: center;">
+        </div>
+    </div>
+</body>
+
+</html>
