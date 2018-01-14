@@ -82,6 +82,7 @@ function visualize(data, filters) {
     // visualize
     Type_WeekDay_Scaterplot(filtered_data);
     Img_Video_Line(filtered_data);
+    //demoKmean(filtered_data);
 }
 
 //////////////////////
@@ -535,4 +536,14 @@ function Img_Video_Line(data) {
         .attr('x', width - 35)
         .attr('y', 30)
         .text("Video");
+}
+
+function demoKmean(data)
+{
+    var arr = [];
+    data.forEach(d =>{
+        arr.push(d.num_videos*1)
+    })
+    var clusters = d3.kmeans(arr,6);
+    console.log(clusters);
 }
