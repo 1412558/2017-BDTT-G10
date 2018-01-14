@@ -12,9 +12,9 @@ var colorPopular = "#FF7F0E";
 var colorNPopular = "#4DAF4A";
 var colorTotal = "#1F77B4";
 var totalWeekday = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-var totalChanel = ["Entertainment", "Bussiness", "Tech", "Lifestyle", "Viral", "Social Media", "World"];
+var totalChanel = ["Entertainment", "Business", "Tech", "Lifestyle", "Viral", "Social Media", "World"];
 
-d3.csv('mydata.csv', function (data) {
+d3.csv('data/mydata.csv', function (data) {
     // visualize not filter
     visualize(data, filters);
 
