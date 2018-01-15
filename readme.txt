@@ -1,0 +1,3 @@
+ - Chạy file Visualization.html bằng trình duyệt Firefox
+ - Bộ dữ liệu đã được tính chỉnh, xóa bỏ bớt các thuộc tính không sử dụng để tăng hiệu quả đọc file
+ - Bộ dữ liệu gốc: https://archive.ics.uci.edu/ml/datasets/online+news+popularity
